@@ -6,7 +6,7 @@ export default function Home() {
       <header className="flex flex-col-6 justify-center items-center space-x-20 p-8">
         <div>
           <a
-            href="/"
+            href="#main"
             className="text-black text-4xl cursor-pointer relative group"
           >
             AmSecretariat
@@ -15,7 +15,7 @@ export default function Home() {
         </div>
         <div className="sm:flex space-x-20 sm:text-4xl hidden">
           <a
-            href="/"
+            href="#main"
             className="text-black text-4xl cursor-pointer relative group"
           >
             Home
