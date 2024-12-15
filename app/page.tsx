@@ -81,33 +81,39 @@ export default function Home() {
       </main>
 
       <section id="aboutus" className="min-h-screen flex bg-white">
-        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-20 p-20">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:space-x-44 p-20">
           <Image
             className="transition-transform duration-300 ease-in-out hover:translate-y-[-20px]"
             src="/group.svg"
-            width={800}
-            height={800}
+            width={750}
+            height={750}
             alt=""
           />
           <div className="flex flex-col">
-            <p className="text-pink-300 text-xl sm:text-4xl">À propos</p>
-            <h1 className="text-black text-xl sm:text-3xl sm:!leading-loose">
-              <span className="sm:text-5xl">
-                Notre métier est de vous rendre <br />
-                la vie plus facile et plus confortable
+            <p className="text-pink-300 text-xl sm:text-4xl mb-8">À propos</p>
+            <h1 className="text-black text-xl sm:text-2xl sm:!leading-relaxed font-thin">
+              <span className="sm:text-5xl sm:text font-bold">
+                Notre métier est de <br />
+                vous rendre la vie plus facile <br />
+                et plus confortable
               </span>{" "}
+              <br />
               <br />
               Quis ipsum suspendisse ultrices gravida risus coe <br />
               maecenas accumsan lacus vel facilisis. <br />
-              <span className="sm:text-5xl">
+              <br />
+              <span className="sm:text-3xl font-bold">
                 01. Comment pouvons-nous aider votre entreprise ?
               </span>{" "}
               <br />
+              <br />
               Autem vel eum iure reprehenderit qui in ea voluptate <br />
               velit esse ruam molestiae consequatur. <br />
-              <span className="sm:text-5xl">
+              <br />
+              <span className="sm:text-3xl font-bold">
                 02. Pourquoi devenir notre partenaire ?
               </span>{" "}
+              <br />
               <br />
               Reprehenderit in voluptate velit esse cillum dolore eua <br />
               fugiat nulla pariatur. <br />
@@ -117,10 +123,35 @@ export default function Home() {
       </section>
       <section
         id="service"
-        className="min-h-screen flex flex-col sm:flex-row items-center space-y-8 sm:space-y-0 sm:space-x-8"
+        className="min-h-screen flex flex-col sm:flex-row items-center space-y-8 sm:space-y-0 sm:space-x-8 p-20"
       >
+        <div className="sm:w-2/4 flex flex-col p-20">
+          <p className="text-pink-300 text-xl sm:text-4xl mb-8">Nos services</p>
+          <h1 className="text-black text-xl sm:text-2xl sm:!leading-loose font-thin">
+            <span className="sm:text-5xl sm:text font-bold">
+              Nous fournissons les meilleurs services d&apos;assistant virtuel
+            </span>{" "}
+            <br />
+            Consectetur adipiscing elit sed do eiusmod tempor in <br />
+            labore et dolore magna aliqua ruis ipsum suspendisse <br />
+            ultrices gravida sit amet. <br />
+            <div className="flex mt-4 ">
+              <span className="sm:text-2xl font-bold sm:!leading-loose">
+                Quis autem vel eum iure reprehenderit aui <br />
+                Suscipit laboriosam nisi rut aliuid eum iure <br />
+                Dolor repellendus temporibus autem auibus
+              </span>
+            </div>
+          </h1>
+
+          <button className="relative pink text-black font-thin text-sm sm:text-lg shadow-lg p-4 px-10 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-pink-30 mt-12">
+            <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
+            À propos
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 sm:w-2/4 ml-12">
-          <div className="flex flex-col transition-transform duration-300 ease-in-out hover:translate-y-[-20px] text-black text-2xl items-center space-y-20 py-20 border-pink-700 bg-white border-b-4 rounded-3xl p-6">
+          <div className="flex flex-col transition-transform duration-300 ease-in-out hover:translate-y-[-20px] text-black text-2xl items-center space-y-20 py-20 border-pink-700 bg-white border-b-4 rounded-3xl p-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="102"
@@ -193,31 +224,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-
-        <div className="sm:w-2/4 flex flex-col">
-          <p className="text-pink-300 text-xl sm:text-4xl">À propos</p>
-          <h1 className="text-black text-xl sm:text-3xl sm:!leading-loose">
-            <span className="sm:text-5xl">
-              Notre métier est de vous rendre <br />
-              la vie plus facile et plus confortable
-            </span>{" "}
-            <br />
-            Quis ipsum suspendisse ultrices gravida risus coe <br />
-            maecenas accumsan lacus vel facilisis. <br />
-            <span className="sm:text-5xl">
-              01. Comment pouvons-nous aider votre entreprise ?
-            </span>{" "}
-            <br />
-            Autem vel eum iure reprehenderit qui in ea voluptate <br />
-            velit esse ruam molestiae consequatur. <br />
-            <span className="sm:text-5xl">
-              02. Pourquoi devenir notre partenaire ?
-            </span>{" "}
-            <br />
-            Reprehenderit in voluptate velit esse cillum dolore eua <br />
-            fugiat nulla pariatur. <br />
-          </h1>
-        </div>
       </section>
 
       <section id="plans" className="min-h-screen">
@@ -288,7 +294,7 @@ export default function Home() {
 
       <section id="contact" className="min-h-screen">
         <div className="flex justify-center items-center pink rounded-3xl shadow-2xl max-w-5xl mx-auto mt-20">
-          <h1 className="text-black text-6xl">
+          <h1 className="text-black text-6xl font-bold">
             <span className="text-2xl">Prêt à</span>
             <br />
             Commencez avec nous
@@ -345,6 +351,10 @@ export default function Home() {
           </h1>
           <p className="text-xl text-black cursor-pointer hover:text-gray-500">
             Mentions légales
+          </p>
+
+          <p className="text-xl text-black cursor-pointer hover:text-gray-500">
+            Confidentialité
           </p>
         </div>
       </section>
