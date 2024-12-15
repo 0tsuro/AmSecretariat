@@ -85,8 +85,8 @@ export default function Home() {
           <Image
             className="transition-transform duration-300 ease-in-out hover:translate-y-[-20px]"
             src="/group.svg"
-            width={750}
-            height={750}
+            width={500}
+            height={500}
             alt=""
           />
           <div className="flex flex-col">
@@ -259,7 +259,7 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-3xl shadow-xl">
             <Image src="/plan.png" width={500} height={500} alt="Plans" />
             <div className="p-8 text-center">
-              <h1 className="text-black text-3xl p-8 font-bold">
+              <h1 className="text-black text-2xl p-8 font-bold">
                 Entrepreneur plan
               </h1>
               <p className="text-black text-xl font-roboto">
@@ -279,7 +279,7 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-3xl shadow-lg">
             <Image src="/plan.png" width={500} height={500} alt="Plans" />
             <div className="p-8 text-center">
-              <h1 className="text-black text-3xl p-8 font-bold">
+              <h1 className="text-black text-2xl p-8 font-bold">
                 Entrepreneur plan
               </h1>
               <p className="text-black text-xl font-roboto">
@@ -360,7 +360,7 @@ export default function Home() {
           </p>
 
           <p className="text-xl text-black cursor-pointer hover:text-gray-500">
-            Confidentialité
+            Politique de Confidentialité
           </p>
         </div>
       </section>
