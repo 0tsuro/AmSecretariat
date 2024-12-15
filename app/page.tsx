@@ -7,44 +7,44 @@ export default function Home() {
         <div>
           <a
             href="#main"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             AmSecretariat
             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transition-all duration-1000 group-hover:w-0"></span>
           </a>
         </div>
-        <div className="sm:flex space-x-20 sm:text-4xl hidden">
+        <div className="sm:flex space-x-20 sm:text-2xl hidden">
           <a
             href="#main"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             Home
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#aboutus"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             À propos
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#service"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             Services
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#plans"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             Nos plans
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#contact"
-            className="text-black text-4xl cursor-pointer relative group"
+            className="text-black text-2xl cursor-pointer relative group"
           >
             Contact
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
@@ -90,9 +90,9 @@ export default function Home() {
             alt=""
           />
           <div className="flex flex-col">
-            <p className="text-pink-300 text-xl sm:text-4xl mb-8">À propos</p>
-            <h1 className="text-black text-xl sm:text-2xl sm:!leading-relaxed font-thin">
-              <span className="sm:text-5xl sm:text font-bold">
+            <p className="text-pink-300 text-xl sm:text-3xl mb-8">À propos</p>
+            <h1 className="text-black text-xl sm:text-xl sm:!leading-relaxed font-thin">
+              <span className="sm:text-3xl sm:text font-bold">
                 Notre métier est de <br />
                 vous rendre la vie plus facile <br />
                 et plus confortable
@@ -102,7 +102,7 @@ export default function Home() {
               Quis ipsum suspendisse ultrices gravida risus coe <br />
               maecenas accumsan lacus vel facilisis. <br />
               <br />
-              <span className="sm:text-3xl font-bold">
+              <span className="sm:text-2xl font-bold">
                 01. Comment pouvons-nous aider votre entreprise ?
               </span>{" "}
               <br />
@@ -110,7 +110,7 @@ export default function Home() {
               Autem vel eum iure reprehenderit qui in ea voluptate <br />
               velit esse ruam molestiae consequatur. <br />
               <br />
-              <span className="sm:text-3xl font-bold">
+              <span className="sm:text-2xl font-bold">
                 02. Pourquoi devenir notre partenaire ?
               </span>{" "}
               <br />
@@ -126,9 +126,9 @@ export default function Home() {
         className="min-h-screen flex flex-col sm:flex-row items-center space-y-8 sm:space-y-0 sm:space-x-8 p-20"
       >
         <div className="sm:w-2/4 flex flex-col p-20">
-          <p className="text-pink-300 text-xl sm:text-4xl mb-8">Nos services</p>
+          <p className="text-pink-300 text-xl sm:text-3xl mb-8">Nos services</p>
           <h1 className="text-black text-xl sm:text-2xl sm:!leading-loose font-thin">
-            <span className="sm:text-5xl sm:text font-bold">
+            <span className="sm:text-3xl sm:text font-bold">
               Nous fournissons les meilleurs services d&apos;assistant virtuel
             </span>{" "}
             <br />
@@ -136,7 +136,7 @@ export default function Home() {
             labore et dolore magna aliqua ruis ipsum suspendisse <br />
             ultrices gravida sit amet. <br />
             <div className="flex mt-4 ">
-              <span className="sm:text-2xl font-bold sm:!leading-loose">
+              <span className="sm:text-xl font-bold sm:!leading-loose">
                 Quis autem vel eum iure reprehenderit aui <br />
                 Suscipit laboriosam nisi rut aliuid eum iure <br />
                 Dolor repellendus temporibus autem auibus
@@ -228,9 +228,9 @@ export default function Home() {
 
       <section id="plans" className="min-h-screen">
         <div className="flex flex-col items-center justify-center p-12">
-          <h1 className="text-black text-3xl">Nos plans</h1>
+          <h1 className="text-black text-2xl">Nos plans</h1>
           <div className="flex p-8">
-            <p className="text-black text-6xl">
+            <p className="text-black text-3xl">
               Découvrez les meilleurs plans selon vos besoins
             </p>
           </div>
@@ -239,8 +239,10 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-3xl shadow-xl">
             <Image src="/plan.png" width={500} height={500} alt="Plans" />
             <div className="p-8 text-center">
-              <h1 className="text-black text-3xl p-8">Entrepreneur plan</h1>
-              <p className="text-black text-xl">
+              <h1 className="text-black text-2xl p-8 font-bold">
+                Entrepreneur plan
+              </h1>
+              <p className="text-black text-xl font-roboto">
                 12h / semaines <br />
                 <br />
                 1 secrétaire assigné <br />
@@ -257,15 +259,17 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-3xl shadow-xl">
             <Image src="/plan.png" width={500} height={500} alt="Plans" />
             <div className="p-8 text-center">
-              <h1 className="text-black text-3xl p-8">Entrepreneur plan</h1>
-              <p className="text-black text-xl">
+              <h1 className="text-black text-3xl p-8 font-bold">
+                Entrepreneur plan
+              </h1>
+              <p className="text-black text-xl font-roboto">
                 12h / semaines <br />
                 <br />
                 1 secrétaire assigné <br />
                 <br />
                 disponible de 9h à 19h
               </p>
-              <button className="relative overflow-hidden group text-black text-3xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
+              <button className="relative overflow-hidden group text-black text-2xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
                 <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
                 Demander un devis
               </button>
@@ -275,8 +279,10 @@ export default function Home() {
           <div className="flex flex-col bg-white rounded-3xl shadow-lg">
             <Image src="/plan.png" width={500} height={500} alt="Plans" />
             <div className="p-8 text-center">
-              <h1 className="text-black text-3xl p-8">Entrepreneur plan</h1>
-              <p className="text-black text-xl">
+              <h1 className="text-black text-3xl p-8 font-bold">
+                Entrepreneur plan
+              </h1>
+              <p className="text-black text-xl font-roboto">
                 12h / semaines <br />
                 <br />
                 1 secrétaire assigné <br />
@@ -294,7 +300,7 @@ export default function Home() {
 
       <section id="contact" className="min-h-screen">
         <div className="flex justify-center items-center pink rounded-3xl shadow-2xl max-w-5xl mx-auto mt-20">
-          <h1 className="text-black text-6xl font-bold">
+          <h1 className="text-black text-4xl font-bold">
             <span className="text-2xl">Prêt à</span>
             <br />
             Commencez avec nous
