@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="">
-      <header className="flex flex-col-6 justify-center items-center space-x-20 p-8">
+      <header className="flex justify-between items-center p-8">
         <div>
           <a
             href="#main"
@@ -13,48 +13,51 @@ export default function Home() {
             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transition-all duration-1000 group-hover:w-0"></span>
           </a>
         </div>
-        <div className="sm:flex space-x-20 sm:text-2xl hidden">
-          <a
-            href="#main"
-            className="text-black text-2xl cursor-pointer relative group"
-          >
+
+        <div className="flex space-x-20 text-2xl">
+          <a href="#main" className="text-black cursor-pointer relative group">
             Home
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#aboutus"
-            className="text-black text-2xl cursor-pointer relative group"
+            className="text-black cursor-pointer relative group"
           >
             À propos
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#service"
-            className="text-black text-2xl cursor-pointer relative group"
+            className="text-black cursor-pointer relative group"
           >
             Services
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
-          <a
-            href="#plans"
-            className="text-black text-2xl cursor-pointer relative group"
-          >
+          <a href="#plans" className="text-black cursor-pointer relative group">
             Nos plans
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
           <a
             href="#contact"
-            className="text-black text-2xl cursor-pointer relative group"
+            className="text-black cursor-pointer relative group"
           >
             Contact
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-1000 group-hover:w-full"></span>
           </a>
         </div>
+
+        <div className="flex items-center">
+          <input
+            type="text"
+            placeholder="Rechercher..."
+            className="border border-gray-300 rounded-lg px-4 py-2 text-black"
+          />
+        </div>
       </header>
 
       <main className="sm:min-h-screen space-x-96 flex flex-col pt-10 sm:justify-start sm:relative p-8">
         <div className="flex flex-col items-center space-y-4 p-4 sm:items-start sm:pl-32 relative sm:top-48">
-          <h1 className="text-black text-center text-3xl sm:text-6xl sm:text-start">
+          <h1 className="text-black text-center text-2xl sm:text-6xl sm:text-start">
             Professionnel indépendant qui <br />
             travaille à distance pour vous <br />
             aider dans votre activité
@@ -237,8 +240,8 @@ export default function Home() {
         </div>
         <div className="flex flex-col-3 justify-center items-center space-x-20">
           <div className="flex flex-col bg-white rounded-3xl shadow-xl">
-            <Image src="/plan.png" width={500} height={500} alt="Plans" />
-            <div className="p-8 text-center">
+            <Image src="/plan.png" width={450} height={450} alt="Plans" />
+            <div className="p-6 text-center">
               <h1 className="text-black text-2xl p-8 font-bold">
                 Entrepreneur plan
               </h1>
@@ -249,7 +252,7 @@ export default function Home() {
                 <br />
                 disponible de 9h à 19h
               </p>
-              <button className="relative overflow-hidden group text-black text-3xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
+              <button className="relative overflow-hidden group text-black text-2xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
                 <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
                 Demander un devis
               </button>
@@ -257,8 +260,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col bg-white rounded-3xl shadow-xl">
-            <Image src="/plan.png" width={500} height={500} alt="Plans" />
-            <div className="p-8 text-center">
+            <Image src="/plan.png" width={450} height={450} alt="Plans" />
+            <div className="p-6 text-center">
               <h1 className="text-black text-2xl p-8 font-bold">
                 Entrepreneur plan
               </h1>
@@ -277,8 +280,8 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col bg-white rounded-3xl shadow-lg">
-            <Image src="/plan.png" width={500} height={500} alt="Plans" />
-            <div className="p-8 text-center">
+            <Image src="/plan.png" width={450} height={450} alt="Plans" />
+            <div className="p-6 text-center">
               <h1 className="text-black text-2xl p-8 font-bold">
                 Entrepreneur plan
               </h1>
@@ -289,7 +292,7 @@ export default function Home() {
                 <br />
                 disponible de 9h à 19h
               </p>
-              <button className="relative overflow-hidden group text-black text-3xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
+              <button className="relative overflow-hidden group text-black text-2xl pink p-4 rounded-3xl mt-8 shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:pink">
                 <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
                 Demander un devis
               </button>
