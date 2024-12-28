@@ -39,9 +39,6 @@ body {
   font-family: "thin";
   src: url("/Roboto-Thin.ttf") format("truetype");
 }
-header {
-  background-color: white;
-}
 
 main {
   background-image: url(/bghome.png);
@@ -68,4 +65,9 @@ main {
 
 .pink {
   background-color: #f7ccff;
+}
+
+#choose {
+  background-image: url(/bgchoose.png);
+  background-size: cover;
 }
