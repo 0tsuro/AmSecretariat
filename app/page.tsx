@@ -16,7 +16,7 @@ export default function Home() {
           </a>
         </div>
 
-        <nav className="hidden sm:flex space-x-24 text-2xl">
+        <nav className="hidden sm:flex space-x-16 text-xl">
           <a href="#main" className="text-black cursor-pointer relative group">
             Home
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
@@ -59,7 +59,7 @@ export default function Home() {
 
       <main className="sm:min-h-screen space-x-96 flex flex-col pt-0 sm:justify-start sm:relative p-8">
         <div className="flex flex-col items-center space-y-4 p-4 sm:items-start sm:pl-32 relative sm:top-48">
-          <h1 className="text-black text-center text-2xl sm:text-6xl sm:text-start">
+          <h1 className="text-black text-center text-2xl sm:text-4xl sm:text-start">
             Professionnel indépendant qui <br />
             travaille à distance pour vous <br />
             aider dans votre activité
@@ -82,7 +82,7 @@ export default function Home() {
               À propos
             </button>
           </div>
-          <div className="flex">
+          <div className="flex mb-10">
             <Testimonials></Testimonials>
           </div>
         </div>
