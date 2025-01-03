@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className="">
       <header className="flex sm:absolute z-50 w-full top-0 justify-between items-center p-6 sm:p-8">
-        <div className="flex items-center space-x-4">
-          <Image src="/logo.png" width={92} height={92} alt="Logo" />
+        <div className="flex items-center justify-center space-x-4 w-full sm:w-auto mr-12">
+          <Image src="/logo.png" width={52} height={52} alt="Logo" />
           <a
             href="#main"
-            className="text-black text-2xl cursor-pointer relative group font-bold"
+            className="text-black text-xl cursor-pointer relative group font-bold"
           >
             AmSecretariat
             <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black transition-all duration-1000 group-hover:w-0"></span>
@@ -59,12 +59,12 @@ export default function Home() {
 
       <main className="sm:min-h-screen space-x-96 flex flex-col pt-0 sm:justify-start sm:relative p-8">
         <div className="flex flex-col items-center space-y-4 p-4 sm:items-start sm:pl-32 relative sm:top-48">
-          <h1 className="text-black text-center text-2xl sm:text-4xl sm:text-start">
+          <h1 className="text-black text-center text-xl sm:text-4xl sm:text-start">
             Professionnel indépendant qui <br />
             travaille à distance pour vous <br />
             aider dans votre activité
           </h1>
-          <p className="text-black text-center text-sm sm:text-xl sm:text-start">
+          <p className="text-black text-center text-xs sm:text-xl sm:text-start">
             Vous pouvez facilement confier à nos assistants virtuels les tâches
             qui nécessitent <br />
             du temps, de la précision et de la patience.
@@ -77,7 +77,7 @@ export default function Home() {
               height={170}
               alt="Demander un devis"
             />
-            <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:p-4 px-10 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-pink-300">
+            <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:py-4 sm:px-10 p-2 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 active:bg-pink-400">
               <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
               À propos
             </button>
@@ -85,6 +85,10 @@ export default function Home() {
           <div className="flex mb-10">
             <Testimonials></Testimonials>
           </div>
+        </div>
+
+        <div className="flex sm:absolute sm:right-[250px] sm:top-40">
+          <Image src="/photo2.svg" width={500} height={500} alt="" />
         </div>
       </main>
 
@@ -305,7 +309,7 @@ export default function Home() {
           <div className="flex flex-col-2">
             <div className="items-center">
               <h2 className="text-3xl text-center sm:text-start mt-10 font-bold text-gray-800">
-                Why Choose Us
+                Pourquoi nous choisir ?
               </h2>
               <p className="mt-4 text-xl text-gray-600 text-center sm:text-start">
                 We are dedicated to delivering exceptional service <br />
@@ -395,17 +399,20 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="footer" className="flex bg-gray-100 py-6 px-4">
-        <div className="flex justify-start">
-          <h1 className="text-xs sm:text-xl text-black">
+      <section
+        id="footer"
+        className="flex items-center justify-between bg-gray-100 py-6 px-4"
+      >
+        <div>
+          <h1 className="text-xs sm:text-lg text-black">
             Copyright : AmSecretariat, 2025
           </h1>
         </div>
-        <div className="ml-auto flex space-x-8">
-          <p className="text-xs sm:text-xl text-black cursor-pointer hover:text-gray-500">
+        <div className="flex space-x-4 sm:space-x-8 ml-20">
+          <p className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500">
             Mentions légales
           </p>
-          <p className="text-xs sm:text-xl text-black cursor-pointer hover:text-gray-500">
+          <p className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500">
             Politique de Confidentialité
           </p>
         </div>
