@@ -87,8 +87,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex sm:absolute sm:right-[250px] sm:top-40">
-          <Image src="/photo2.svg" width={500} height={500} alt="" />
+        <div className="flex sm:absolute sm:right-[200px] sm:top-40">
+          <Image src="/photo2.svg" width={350} height={350} alt="" />
         </div>
       </main>
 
