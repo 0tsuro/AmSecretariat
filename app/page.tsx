@@ -88,11 +88,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex shadow-xl sm:absolute sm:right-[200px] sm:top-40">
+        <div className="flex shadow-xl sm:absolute sm:right-[100px] sm:top-64">
           <Image
             src="/photo3.jpeg"
-            width={350}
-            height={350}
+            width={250}
+            height={250}
             alt=""
             className="rounded-xl"
           />
