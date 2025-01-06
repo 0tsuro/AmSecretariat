@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Testimonials from "./components/testimonials";
+import ContactForm from "./components/contact";
 
 export default function Home() {
   return (
@@ -87,8 +88,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex sm:absolute sm:right-[200px] sm:top-40">
-          <Image src="/photo2.svg" width={350} height={350} alt="" />
+        <div className="flex shadow-xl sm:absolute sm:right-[200px] sm:top-40">
+          <Image
+            src="/photo3.jpeg"
+            width={350}
+            height={350}
+            alt=""
+            className="rounded-xl"
+          />
         </div>
       </main>
 
@@ -394,8 +401,8 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="flex justify-center items-center mt-20 pb-20">
-          <Image src="/contact.png" width={1000} height={1000} alt="form" />
+        <div className="flex justify-center items-center pb-20 mt-48">
+          <ContactForm></ContactForm>
         </div>
       </section>
 
