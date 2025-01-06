@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex shadow-xl sm:absolute sm:right-[100px] sm:top-64">
+        <div className="flex shadow-xl sm:absolute sm:right-[150px] sm:top-64">
           <Image
             src="/photo3.jpeg"
             width={250}
