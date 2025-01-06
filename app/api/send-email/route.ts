@@ -13,11 +13,11 @@ export async function POST(req: Request) {
 
   try {
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST, // Utilisation de la variable d'environnement
-      port: Number(process.env.SMTP_PORT), // Conversion du port en nombre
+      host: "smtp.gmail.com", // Remplace par l'adresse du serveur SMTP
+      port: 587, // Port pour TLS (non sécurisé), ou 465 pour SSL
       auth: {
-        user: process.env.SMTP_USER, // Utilisation de la variable d'environnement
-        pass: process.env.SMTP_PASS, // Utilisation de la variable d'environnement
+        user: process.env.SMTP_USER, // Ton email
+        pass: process.env.SMTP_PASS, // Ton mot de passe ou token SMTP
       },
     });
 
