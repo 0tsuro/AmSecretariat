@@ -16,11 +16,20 @@ const ContactForm = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
+    const { name, value, type } = e.target;
+
+    // Vérifie si l'élément est un <input> de type checkbox
+    if (type === "checkbox") {
+      setFormData({
+        ...formData,
+        [name]: (e.target as HTMLInputElement).checked, // Cast explicite pour accéder à checked
+      });
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
