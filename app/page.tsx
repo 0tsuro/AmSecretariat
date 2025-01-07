@@ -61,14 +61,14 @@ export default function Home() {
       <main className="sm:min-h-screen space-x-96 flex flex-col pt-0 sm:justify-start sm:relative p-8">
         <div className="flex flex-col items-center space-y-4 p-4 sm:items-start sm:pl-32 relative sm:top-48">
           <h1 className="text-black text-center text-xl sm:text-4xl sm:text-start">
-            Professionnel indépendant qui <br />
-            travaille à distance pour vous <br />
-            aider dans votre activité
+            Expert indépendant, à votre <br />
+            service pour optimiser vos tâches <br />
+            administratives à distance.
           </h1>
           <p className="text-black text-center text-xs sm:text-xl sm:text-start">
-            Vous pouvez facilement confier à nos assistants virtuels les tâches
-            qui nécessitent <br />
-            du temps, de la précision et de la patience.
+            Confiez vos tâches complexes à notre <br />
+            assistante virtuelle, pour un gain de temps et une gestion sans
+            stress.
           </p>
           <div className="flex flex-col-2 space-x-10 pt-10">
             <Image
@@ -88,11 +88,11 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex shadow-xl sm:absolute sm:right-[150px] sm:top-64">
+        <div className="flex sm:absolute sm:right-[300px] sm:top-52">
           <Image
-            src="/photo3.jpeg"
-            width={250}
-            height={250}
+            src="/photo4.png"
+            width={500}
+            height={500}
             alt=""
             className="rounded-xl"
           />
@@ -100,7 +100,7 @@ export default function Home() {
       </main>
 
       <section id="aboutus" className="min-h-screen bg-white">
-        <div className="flex flex-col justify-center items-center sm:flex-row  sm:space-x-44 p-10 sm:p-40">
+        <div className="flex flex-col justify-center items-center sm:flex-row  sm:space-x-44 p-1 sm:p-40">
           <Image
             className="transition-transform duration-300 ease-in-out hover:translate-y-[-20px]"
             src="/group.svg"
@@ -118,24 +118,31 @@ export default function Home() {
               </span>{" "}
               <br />
               <br />
-              Quis ipsum suspendisse ultrices gravida risus coe <br />
-              maecenas accumsan lacus vel facilisis. <br />
+              Nous mettons à votre disposition des services adaptés pour alléger
+              vos tâches <br />
+              et vous permettre de vous concentrer sur ce qui compte vraiment.
+              <br />
               <br />
               <span className="sm:text-2xl font-bold">
-                01. Comment pouvons-nous aider votre entreprise ?
+                01. Comment pouvons-nous alléger vos tâches administratives ?
               </span>{" "}
               <br />
               <br />
-              Autem vel eum iure reprehenderit qui in ea voluptate <br />
-              velit esse ruam molestiae consequatur. <br />
+              Nous prenons en charge la gestion de vos documents, vos plannings
+              et toutes <br />
+              vos tâches administratives pour vous offrir plus de liberté et
+              d’efficacité.
+              <br />
               <br />
               <span className="sm:text-2xl font-bold">
-                02. Pourquoi devenir notre partenaire ?
+                02. Pourquoi choisir notre expertise ?
               </span>{" "}
               <br />
               <br />
-              Reprehenderit in voluptate velit esse cillum dolore eua <br />
-              fugiat nulla pariatur. <br />
+              En nous confiant votre secrétariat, vous bénéficiez de services
+              sur mesure, <br />
+              d’un gain de temps précieux et de la tranquillité d’esprit, tout
+              en optimisant la gestion de <br /> votre entreprise.
             </h1>
           </div>
         </div>
@@ -151,9 +158,8 @@ export default function Home() {
               Nous fournissons les meilleurs services d&apos;assistant virtuel
             </span>{" "}
             <br />
-            Consectetur adipiscing elit sed do eiusmod tempor in <br />
-            labore et dolore magna aliqua ruis ipsum suspendisse <br />
-            ultrices gravida sit amet. <br />
+            Notre expertise vous permet de vous concentrer sur vos priorités
+            tout en garantissant une gestion efficace et professionnelle.
             <div className="flex mt-4">
               <span className="sm:text-xl font-bold sm:!leading-loose flex items-center">
                 <svg
@@ -172,7 +178,7 @@ export default function Home() {
                     />
                   </g>
                 </svg>
-                Quis autem vel eum iure reprehenderit aui
+                Gain de temps : déléguez les tâches administratives.
               </span>
             </div>
             <div className="mt-4">
@@ -193,7 +199,7 @@ export default function Home() {
                     />
                   </g>
                 </svg>
-                Suscipit laboriosam nisi rut aliuid eum iure
+                Efficacité : gestion optimisée pour plus de productivité.
               </span>
             </div>
             <div className="mt-4">
@@ -214,7 +220,7 @@ export default function Home() {
                     />
                   </g>
                 </svg>
-                Suscipit laboriosam nisi rut aliuid eum iure
+                Flexibilité : services sur mesure, quand vous en avez besoin.
               </span>
             </div>
           </h1>
@@ -319,24 +325,26 @@ export default function Home() {
                 Pourquoi nous choisir ?
               </h2>
               <p className="mt-4 text-xl text-gray-600 text-center sm:text-start">
-                We are dedicated to delivering exceptional service <br />
-                and results, ensuring you always get the best experience.
+                Nous nous engageons à offrir un service exceptionnel et des
+                résultats optimaux,
+                <br /> afin de garantir une expérience client irréprochable à
+                chaque étape.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12 mb-12">
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center border-b-4 border-pink-700 transition-transform duration-300 ease-in-out hover:translate-y-[-20px]">
                   <h3 className="text-xl font-semibold text-blue-600">500+</h3>
-                  <p className="text-gray-500 mt-2">Clients Served</p>
+                  <p className="text-gray-500 mt-2">Clients</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center border-b-4 border-pink-700 transition-transform duration-300 ease-in-out hover:translate-y-[-20px]">
                   <h3 className="text-xl font-semibold text-blue-600">98%</h3>
-                  <p className="text-gray-500 mt-2">Customer Satisfaction</p>
+                  <p className="text-gray-500 mt-2">Satisfaction cliente</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center border-b-4 border-pink-700 transition-transform duration-300 ease-in-out hover:translate-y-[-20px]">
                   <h3 className="text-xl font-semibold text-blue-600">
-                    20+ Years
+                    + de 20 ans
                   </h3>
-                  <p className="text-gray-500 mt-2">In Business</p>
+                  <p className="text-gray-500 mt-2">Dans le milieu</p>
                 </div>
               </div>
             </div>
