@@ -54,7 +54,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="sm:hidden fixed bottom-16 justify-center right-4">
+        <div className="sm:hidden fixed bottom-16 justify-center right-4 z-50">
           <a
             href="tel:+33612345678"
             className="bg-pink-500 text-white p-4 pr-6 rounded-full shadow-lg flex items-center justify-center space-x-2 transform transition-transform hover:scale-105 active:scale-95"
