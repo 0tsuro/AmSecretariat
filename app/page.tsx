@@ -89,7 +89,7 @@ export default function Home() {
               />
             </a>
             <a href="#aboutus">
-              <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:py-4 sm:px-10 p-2 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 active:bg-pink-400">
+              <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:py-4 sm:px-10 p-3 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 active:bg-pink-400">
                 <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
                 À propos
               </button>
@@ -120,14 +120,20 @@ export default function Home() {
             height={500}
             alt=""
           />
-          <div className="flex flex-col">
-            <p className="text-pink-300 text-lg sm:text-3xl mb-8">À propos</p>
+          <div className="flex flex-col p-4">
+            <p className="text-pink-300 text-lg sm:text-3xl mb-4">À propos</p>
             <h1 className="text-black leading-none sm:text-xl sm:!leading-relaxed font-thin">
               <span className="sm:text-3xl text-lg font-bold">
-                Notre métier est de <br />
-                vous rendre la vie plus facile <br />
+                Notre métier est de{" "}
+                <span className="hidden sm:inline-block">
+                  <br />
+                </span>
+                vous rendre la vie plus facile{" "}
+                <span className="hidden sm:inline-block">
+                  <br />
+                </span>
                 et plus confortable
-              </span>{" "}
+              </span>
               <br />
               <br />
               Nous mettons à votre disposition des services adaptés pour alléger
