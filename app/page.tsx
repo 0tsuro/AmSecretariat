@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Testimonials from "./components/testimonials";
 import ContactForm from "./components/contact";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,10 +37,6 @@ export default function Home() {
             Services
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#plans" className="text-black cursor-pointer relative group">
-            Nos plans
-            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-pink-500 transition-all duration-300 group-hover:w-full"></span>
-          </a>
           <a
             href="#contact"
             className="text-black cursor-pointer relative group"
@@ -56,6 +53,17 @@ export default function Home() {
             className="border border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:ring-2 focus:ring-pink-500"
           />
         </div>
+
+        <div className="sm:hidden fixed bottom-16 justify-center right-4">
+          <a
+            href="tel:+33612345678"
+            className="bg-pink-500 text-white p-4 pr-6 rounded-full shadow-lg flex items-center justify-center space-x-2 transform transition-transform hover:scale-105 active:scale-95"
+            aria-label="Appeler la secrétaire"
+          >
+            <span className="text-xl">📞</span>
+            <span className="text-sm font-medium">Appelez-nous</span>
+          </a>
+        </div>
       </header>
 
       <main className="sm:min-h-screen space-x-96 flex flex-col pt-0 sm:justify-start sm:relative p-8">
@@ -71,17 +79,21 @@ export default function Home() {
             stress.
           </p>
           <div className="flex flex-col-2 space-x-10 pt-10">
-            <Image
-              className="sm:w-[300px] cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1 hover:rotate-3 active:scale-95"
-              src="/button.svg"
-              width={170}
-              height={170}
-              alt="Demander un devis"
-            />
-            <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:py-4 sm:px-10 p-2 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 active:bg-pink-400">
-              <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
-              À propos
-            </button>
+            <a href="#contact">
+              <Image
+                className="sm:w-[300px] cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:-translate-y-1 hover:rotate-3 active:scale-95"
+                src="/button.svg"
+                width={170}
+                height={170}
+                alt="Demander un devis"
+              />
+            </a>
+            <a href="#aboutus">
+              <button className="relative pink text-white text-sm sm:text-lg shadow-lg sm:py-4 sm:px-10 p-2 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-xl active:scale-95 active:bg-pink-400">
+                <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
+                À propos
+              </button>
+            </a>
           </div>
           <div className="flex mb-10">
             <Testimonials></Testimonials>
@@ -225,10 +237,14 @@ export default function Home() {
             </div>
           </h1>
 
-          <button className="relative pink text-black font-thin text-sm sm:text-lg shadow-lg p-4 px-10 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-pink-30 mt-12">
-            <span className="absolute inset-0 bg-pink-300 opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
-            À propos
-          </button>
+          <div className="w-full mt-12">
+            <a href="#contact" className="block">
+              <button className="w-full text-black bg-pink-200 font-thin text-sm sm:text-lg shadow-lg p-4 rounded-full overflow-hidden group transform transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95 active:bg-pink-300 relative">
+                <span className="absolute inset-0 pink opacity-0 group-active:opacity-30 rounded-lg transition-opacity duration-500"></span>
+                Nous contacter
+              </button>
+            </a>
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 sm:gap-12 sm:w-2/4 sm:ml-12">
@@ -424,12 +440,18 @@ export default function Home() {
           </h1>
         </div>
         <div className="flex space-x-4 sm:space-x-8 ml-20">
-          <p className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500">
+          <Link
+            href="/mentions"
+            className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500"
+          >
             Mentions légales
-          </p>
-          <p className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500">
-            Politique de Confidentialité
-          </p>
+          </Link>
+
+          <Link href="/politique" passHref>
+            <p className="text-xs sm:text-lg text-black cursor-pointer hover:text-gray-500">
+              Politique de Confidentialité
+            </p>
+          </Link>
         </div>
       </section>
     </div>
