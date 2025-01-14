@@ -43,14 +43,6 @@ export default function PolitiqueConfidentialite() {
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong>Informations personnelles</strong> : Nom, prénom, adresse
-              e-mail, numéro de téléphone.
-            </li>
-            <li>
-              <strong>Informations techniques</strong> : Adresse IP, type de
-              navigateur, pages visitées.
-            </li>
-            <li>
               <strong>Cookies</strong> : Nous utilisons des cookies pour
               améliorer l&apos;expérience utilisateur.
             </li>
@@ -133,8 +125,8 @@ export default function PolitiqueConfidentialite() {
           <h2 className="text-2xl font-semibold">9. Contact</h2>
           <p>
             Pour toute question concernant cette politique de confidentialité,
-            vous pouvez nous contacter à l&apos;adresse suivante : [Adresse
-            e-mail].
+            vous pouvez nous contacter à l&apos;adresse suivante :
+            siteinnovants@gmail.com.
           </p>
         </section>
       </main>
@@ -142,8 +134,8 @@ export default function PolitiqueConfidentialite() {
       <footer className="bg-gray-800 text-white p-6 mt-12">
         <div className="container mx-auto text-center">
           <p>
-            &copy; {new Date().getFullYear()} AmSecretariat. Tous droits
-            réservés.
+            Fait avec ❤️ par <a href="https://www.webmaniak.fr/">WebManiak</a>{" "}
+            &copy; {new Date().getFullYear()}. Tous droits réservés.
           </p>
         </div>
       </footer>

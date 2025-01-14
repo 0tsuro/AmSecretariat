@@ -34,27 +34,16 @@ export default function MentionsLegales() {
           </p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <strong>Raison sociale</strong> : [Nom de l’entreprise ou de la
-              personne]
+              <strong>Raison sociale</strong> : WEBMANIAK AGENCY LLC
             </li>
             <li>
-              <strong>Statut juridique</strong> : [Auto-entrepreneur / SARL /
-              SAS]
+              <strong>Siège social</strong> : 304 S JONES BLVD 89107Las Vegas
             </li>
             <li>
-              <strong>Siège social</strong> : [Adresse complète]
+              <strong>Adresse e-mail</strong> : siteinnovants@gmail.com
             </li>
             <li>
-              <strong>Numéro SIRET</strong> : [Numéro]
-            </li>
-            <li>
-              <strong>RCS</strong> : [Ville du registre du commerce]
-            </li>
-            <li>
-              <strong>Adresse e-mail</strong> : [Adresse de contact]
-            </li>
-            <li>
-              <strong>Téléphone</strong> : [Numéro de contact]
+              <strong>Téléphone</strong> : 06 59 85 09 84
             </li>
           </ul>
 
@@ -80,16 +69,16 @@ export default function MentionsLegales() {
           </h2>
           <p>
             Le contenu du site (textes, images, illustrations, vidéos, logos,
-            etc.) est la propriété exclusive de [Nom]. Toute reproduction,
-            modification ou publication est interdite sauf autorisation écrite
-            préalable.
+            etc.) est la propriété exclusive de Amsecretariat. Toute
+            reproduction, modification ou publication est interdite sauf
+            autorisation écrite préalable.
           </p>
 
           <h2 className="text-2xl font-semibold">4. Données personnelles</h2>
           <p>
             Le traitement des données personnelles respecte les dispositions du
             RGPD. Vous disposez d’un droit d’accès et de rectification.
-            Contactez-nous à [E-mail].
+            Contactez-nous à siteinnovants@gmail.com.
           </p>
 
           <h2 className="text-2xl font-semibold">5. Cookies</h2>
@@ -102,21 +91,20 @@ export default function MentionsLegales() {
             6. Limitation de responsabilité
           </h2>
           <p>
-            [Nom de l’entreprise ou de la personne] ne pourra être tenu
-            responsable des dommages causés par l’utilisation du site ou d’un
-            matériel incompatible.
+            AmSecretariat ne pourra être tenu responsable des dommages causés
+            par l’utilisation du site ou d’un matériel incompatible.
           </p>
 
           <h2 className="text-2xl font-semibold">7. Contact</h2>
-          <p>Pour toute question, contactez-nous à [Adresse e-mail].</p>
+          <p>Pour toute question, contactez-nous à siteinnovants@gmail.com.</p>
         </section>
       </main>
 
       <footer className="bg-gray-800 text-white p-6 mt-12">
         <div className="container mx-auto text-center">
           <p>
-            &copy; {new Date().getFullYear()} AmSecretariat. Tous droits
-            réservés.
+            Fait avec ❤️ par <a href="https://www.webmaniak.fr/">WebManiak</a>{" "}
+            &copy; {new Date().getFullYear()}. Tous droits réservés.
           </p>
         </div>
       </footer>
